@@ -9,7 +9,10 @@ Created on Sun Sep 12 21:49:01 2021
 import pandas as pd
 data = pd.read_csv('math_students.csv', delimiter=',')
 
-
+# ----------------------------------------------------------------------
+# 1
+# reason = data.groupby('reason').describe()
+# print(reason)
 # ----------------------------------------------------------------------
 # 2
 # a = data['Medu'].value_counts().to_frame()
@@ -59,3 +62,5 @@ data = pd.read_csv('math_students.csv', delimiter=',')
 
 # print(ans)
 # ----------------------------------------------------------------------
+#6
+# print(data[data['activities'] == 'yes']['absences'].value_counts())
